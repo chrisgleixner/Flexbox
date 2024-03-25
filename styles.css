@@ -1,11 +1,6 @@
-.logo-container {
-  display: flexbox;
-}
-
-.logo-container > h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.nav-container {
-  display: flexbox;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
