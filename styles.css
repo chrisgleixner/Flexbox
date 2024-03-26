@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans" sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
   background-color: #f0f0f0;
   box-sizing: border-box;
 }
@@ -10,7 +10,8 @@ header {
   display: flex;
   background-color: #4caf50;
   color: white;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -66,9 +67,102 @@ section {
 }
 
 #about {
-  background-color: aqua;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+div.project-card {
+  flex-grow: 1;
+  align-items: center;
+  flex-basis: 33.333%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  color: black;
+  margin-top: 10px;
+}
+
+.project-card p {
+  color: gray;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc((100% - 20px) / 2); /* two per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; /* full width on very small screens */
+  }
+}
+#contact {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 footer {
   background-color: darkolivegreen;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
